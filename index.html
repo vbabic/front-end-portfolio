@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+  <style>
+    .container {
+      margin: 0 auto;
+      width: 960px;
+    }
+    #answer {
+      overflow:auto;
+      display: block;
+      float: left;
+      width: 60%;
+      border: 1px solid blueviolet;
+      padding: 40px;
+      background-image:url('swedbank.png');
+      background-repeat: no-repeat;
+      background-position: top right;
+
+    }
+    #questions {
+      float: left;
+      width: 30%;
+      display: block;
+    }
+    .navButtonHolder input {
+    padding: 20px;
+    margin: 0 5px 20px 0;
+}
+@media print {
+      #questions, .navButtonHolder {display:none;}
+      #answer {overflow:auto; width: 90%;
+      padding: 20px; font-size: 1.4rem; float:right;
+      border:none;
+      background-image:url('swedbank.png');
+      background-repeat: no-repeat;
+      background-position: top right;      }
+    }
+  </style>
+    <meta charset="utf-8">
+    <title>Swedbank paskolos klausimynas</title>
+  </head>
+  <body>
+  <div class="container">
+    <div id="questions">
+      <div id="heading">
+      </div>
+      <div id="question">
+      </div>
+      <div id="input-holder">
+      </div>
+      <div id="buttons">
+      </div>
+    </div>
+    <div id="answer">
+    </div>
+  </div>
+
+  <script type="text/javascript" src="questions.js"></script>
+  <script type="text/javascript" src="script.js"></script>
+  </body>
+</html>
